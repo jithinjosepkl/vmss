@@ -38,7 +38,7 @@
 			}
 		},
 		"userName": {
-			"maxValue": 12,
+			"maxLength": 12,
 			"type": "string",
 			"defaultValue": "hpcuser",
 			"metadata": {
@@ -46,7 +46,7 @@
 			}
 		},
 		"password": {
-			"maxValue": 32,
+			"maxLength": 32,
 			"type": "string",
 			"metadata": {
 				"description": "User Password."
