@@ -5,7 +5,7 @@
 		"vmSku": {
 			"defaultValue": "Standard_HB60rs",
 			"allowedValues": [
-                "Standard_HB60rs",
+				"Standard_HB60rs",
 				"Standard_HC44rs"
 			],
 			"type": "String",
@@ -76,7 +76,7 @@
 		"publicIPAddressID": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIPAddressName'))]",
 		"nicName": "[concat(variables('namingInfix'), 'nic')]",
 		"ipConfigName": "[concat(variables('namingInfix'), 'ipconfig')]",
-		"hpcImageTypes":{
+		"hpcImageTypes": {
 			"CentOS-7.6": {
 				"publisher": "OpenLogic",
 				"offer": "CentOS",
@@ -194,7 +194,7 @@
 						"ssh": {
 							"publicKeys": [
 								{
-									"path": "[concat('/home/', variables('userName'), '/.ssh/authorized_keys')]"
+									"path": "[concat('/home/', variables('userName'), '/.ssh/authorized_keys')]",
 									"keyData": "[parameters('rsaPublicKey')]"
 								}
 							]
@@ -290,7 +290,7 @@
 					},
 					"osProfile": {
 						"computerNamePrefix": "[variables('namingInfix')]",
-						"adminUsername": "[parameters('userName')]"
+						"adminUsername": "[parameters('userName')]",
 						"adminPassword": "[parameters('password')]"
 					},
 					"diagnosticsProfile": {
